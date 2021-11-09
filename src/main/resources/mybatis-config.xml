@@ -14,34 +14,34 @@
 
         <package name="com.atguigu.crud.bean"/>
     </typeAliases>
-    <!-- 配置mybatis的开发环境-->
-    <environments default="development">
-        <environment id="development">
-            <!-- 事务管理方式：
-             JDBC:将事务交给JDBC管理
-             MANAGED：自己管理事务
-            -->
-            <transactionManager type="JDBC"></transactionManager>
-            <!-- 配置数据源即连接池：
-                POOLED:使用连接池
-                UNPOOLED:不使用连接池
-                JNDI：已过时
-            -->
-            <dataSource type="POOLED">
-                <!-- com.mysql.jdbc.Driver -->
-                <property name="driver" value="${database.driver}"/>
-                <!-- jdbc:mysql:///demo?characterEncoding=utf-8 -->
-                <property name="url" value="${database.url}"/>
-                <!-- root -->
-                <property name="username" value="${database.username}"/>
-                <!-- root -->
-                <property name="password" value="${database.password}"/>
-            </dataSource>
-        </environment>
-    </environments>
-    <!-- 导入mapper.xml映射文件-->
-    <mappers>
-        <mapper resource=""></mapper>
-    </mappers>
+<!--    &lt;!&ndash; 配置mybatis的开发环境&ndash;&gt;-->
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            &lt;!&ndash; 事务管理方式：-->
+<!--             JDBC:将事务交给JDBC管理-->
+<!--             MANAGED：自己管理事务-->
+<!--            &ndash;&gt;-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+<!--            &lt;!&ndash; 配置数据源即连接池：-->
+<!--                POOLED:使用连接池-->
+<!--                UNPOOLED:不使用连接池-->
+<!--                JNDI：已过时-->
+<!--            &ndash;&gt;-->
+<!--            <dataSource type="POOLED">-->
+<!--                &lt;!&ndash; com.mysql.jdbc.Driver &ndash;&gt;-->
+<!--                <property name="driver" value="${database.driver}"/>-->
+<!--                &lt;!&ndash; jdbc:mysql:///demo?characterEncoding=utf-8 &ndash;&gt;-->
+<!--                <property name="url" value="${database.url}"/>-->
+<!--                &lt;!&ndash; root &ndash;&gt;-->
+<!--                <property name="username" value="${database.username}"/>-->
+<!--                &lt;!&ndash; root &ndash;&gt;-->
+<!--                <property name="password" value="${database.password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+<!--    &lt;!&ndash; 导入mapper.xml映射文件&ndash;&gt;-->
+<!--    <mappers>-->
+<!--        <mapper resource=""></mapper>-->
+<!--    </mappers>-->
 
 </configuration>
