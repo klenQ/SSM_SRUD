@@ -63,4 +63,12 @@ public class Employee {
     public void setdId(Integer dId) {
         this.dId = dId;
     }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 }
