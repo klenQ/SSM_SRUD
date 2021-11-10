@@ -16,7 +16,9 @@
     </typeAliases>
     
     <plugins>
-        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="reasonable" value="true"/>
+        </plugin>
 
     </plugins>
 <!--    &lt;!&ndash; 配置mybatis的开发环境&ndash;&gt;-->

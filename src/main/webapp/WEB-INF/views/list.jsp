@@ -80,7 +80,6 @@
 <%--            显示分页文字信息--%>
             <div class="col-md-6">
                 当前${pageInfo.pageNum}页, 总${pageInfo.pages}页, 总记录${pageInfo.total}条记录
-                当前记录数
 
             </div>
 <%--            分页条信息--%>
